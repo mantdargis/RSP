@@ -19,6 +19,9 @@ btns.forEach((button) =>{
       computerScore.textContent = computerPts
     } else if (winner === "player") {
       playerScore.textContent = playerPts
+    } else if (winner === "draw"){
+      winnerSpan.textContent = "Draw"
+      draw()
     }
 
     if(computerPts >= 5){
@@ -101,5 +104,11 @@ function reset(){
     computerPts = 0
     playerPts = 0
     console.log(`Player points ${playerPts}, pc ${computerPts}. ${playerScore.textContent} ${computerScore.textContent}`)
-  }, "1500")
+  }, "2000")
+}
+
+function draw(){
+  setTimeout(() => {
+    winnerSpan.textContent = ""
+  }, "500")
 }
