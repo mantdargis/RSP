@@ -104,7 +104,7 @@ function reset(){
     computerPts = 0
     playerPts = 0
     console.log(`Player points ${playerPts}, pc ${computerPts}. ${playerScore.textContent} ${computerScore.textContent}`)
-  }, "2000")
+  }, "3000")
 }
 
 function draw(){
